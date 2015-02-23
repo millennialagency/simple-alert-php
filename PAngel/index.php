@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+ <html>
+    <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -32,21 +33,21 @@
 			    Driver Awareness State
 			</h3>
             <button type="button" class="btn btn-block btn-lg btn-success <?php if ($_GET["alert"]==1) echo "disabled"; ?>" >OK!</button>
-            <button type="button" class="btn btn-block btn-lg btn-danger <?php if ($_GET["alert"]==0) echo "dis-0abled"; ?>">WARNING</button>
+            <button type="button" class="btn btn-block btn-lg btn-danger <?php if ($_GET["alert"]==0) echo "disabled"; ?>">WARNING</button>
 		</div>
 	</div>
 	<div class="row clearfix">
 		<div class="col-md-6 column">
 			<form role="form" class="form-inline">
 				<div class="form-group">
-					 <label for="inputEmail1">Email address</label><input type="email" class="form-control" id="exampleInputEmail1" />
+					 <label for="inputEmail1">Login</label><input type="email" class="form-control" id="exampleInputEmail1" />
 				</div>
 				<div class="form-group">
 					 <label for="inputPassword1">Password</label><input type="password" class="form-control" id="exampleInputPassword1" />
 				</div>
 				<div class="form-group">
 
-				</div> <button type="submit" class="btn btn-default">Submit</button>
+				</div> <button type="submit" class="btn btn-default">Sign In</button>
 			</form>
 		</div>
 		<div class="col-md-6 column">
