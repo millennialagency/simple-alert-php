@@ -24,18 +24,27 @@
  * # $alert=1 : OK
  * # $alert=2 : WARNING
  */
+ 
 ?>
 
 <div class="container">
 	<div class="row clearfix">
 		<div class="col-md-12 column">
 			<h3>
-			    Driver Awareness State
+			    Awareness State
 			</h3>
-            <button type="button" class="btn btn-block btn-lg btn-success <?php if ($_GET["alert"]==1) echo "disabled"; ?>" >OK!</button>
-            <button type="button" class="btn btn-block btn-lg btn-danger <?php if ($_GET["alert"]==0) echo "disabled"; ?>">WARNING</button>
+            <?php
+            if (isset($_GET["alert"])){$alert = $_GET["alert"];}
+               else {$alert = 99;}
+                     
+            if ($alert==99) echo 'Device Not Connected';
+            if ($alert==0) echo '<button type="button" class="btn btn-block btn-lg btn-success disabled" >OK!</button>';
+            if ($alert==1) echo '<button type="button" class="btn btn-block btn-lg btn-danger">WARNING</button>';
+            
+            ?>
 		</div>
 	</div>
+    <hr>
 	<div class="row clearfix">
 		<div class="col-md-6 column">
 			<form role="form" class="form-inline">
@@ -55,7 +64,7 @@
 				Saving Lives
 			</h3>
 			<p>
-                We save lives by waking people up when they're fatigued on the road
+                We save lives by waking people up!
 			</p>
 		</div>
 	</div>
