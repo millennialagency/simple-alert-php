@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PilotAngel|Alert</title>
+    <title>Alert</title>
 
     <!-- Bootstrap -->
     <link href="bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -21,8 +21,8 @@
 <?php
 /*
  * A simple app for setting alerts if a flag is raised
- * # $alert=1 : OK
- * # $alert=2 : WARNING
+ * # $alert=0 : OK
+ * # $alert=1,2,... : WARNING
  */
  
 ?>
@@ -38,7 +38,7 @@
                else {$alert = 99;}
                      
             if ($alert==99) echo 'Device Not Connected';
-            if ($alert==0) echo '<button type="button" class="btn btn-block btn-lg btn-success disabled" >OK!</button>';
+            if ($alert==0) echo '<button type="button" class="btn btn-block btn-lg btn-success">OK!</button>';
             if ($alert==1) echo '<button type="button" class="btn btn-block btn-lg btn-danger">WARNING</button>';
             
             ?>
@@ -61,10 +61,10 @@
 		</div>
 		<div class="col-md-6 column">
 			<h3>
-				Saving Lives
+			Good morning
 			</h3>
 			<p>
-                We save lives by waking people up!
+                	we blah blah blah
 			</p>
 		</div>
 	</div>
